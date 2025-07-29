@@ -1,0 +1,53 @@
+vim .gitignore = insert the files name in this .gitignore file to ignore those files.
+
+git log = to view the commits history
+		latest commit always in the top,
+		to see previous commit click enter
+		to come out from that commits history screen click "q"
+
+git log --oneline = to see commit id in short and commit message.
+
+git log --pretty=oneline = to see full commit id and commit message.
+
+git show committid --name-only = to see what are the things are committed like files
+
+git config = to add user names and email
+		git config user.name "siva"
+		git config user.email "siva@gmail.com"
+
+git log -2 = to see latest 2  commits
+
+git log --follow --all amazon = to see the number of commits that made to amazon
+
+git show commitid = to see the changes with content, made with that commitid
+
+git show committid --stat = to see the number of changes made with that commit
+
+we can change the user name and user email for the commit, but conditions applied like we can only change to the latest commit.(--amend is only for latest)
+git commit --amend --author "giri <giri@gmail.com>" = to change the latest commits user name and email.
+git commit --amend -m "This is my new commit" = to change the latest commit message
+git commit --amend --no-edit = to commit the left over file to the latest commit, without creating a new commit.
+
+git reset --hard HEAD~1 = to delete the latest commit with the content (1 represent latest one commit, if it is 2 latest 2 commits) - we can delete all the commits using this command  except the first commit
+git reset --soft HEAD~2 = to delete only the latest commit without the content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
